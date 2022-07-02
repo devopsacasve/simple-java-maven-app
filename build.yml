@@ -1,0 +1,19 @@
+# Example of build.yml file for Jenkins publishing generic libraries in Nexus
+maintainer: fortuno@laliga.es   # E-mail of project mantainer/owner, for information purpose only
+format: "java"                 # language/technology of the project
+phases:
+  build:      # array with the libraries to build/publish. The four params (compile,sln,library,version) are mandatory for each library. 
+    - compile: "yes"                                # Building and publishing the library                                      # target/my-app-1.0-SNAPSHOT.jar 
+      library: " target/my-app-1.0-SNAPSHOT.jar"    # library (relative path to project root)
+      groupId: "com.mycompany.app"
+      artifactId: "my-app"
+      version: 1.0-SNAPSHOT                                  # Version for publishing the library. Format: [major].[minor]
+        
+  email:
+
+    enabled: "no"    # Send email notification with a summary of the Jenkins job execution  ssss                               
+
+    targetList: ["alejandro.paz@dxc.com","manuel.gutierrez@dxc.com"]             # List of target emails
+
+
+    
