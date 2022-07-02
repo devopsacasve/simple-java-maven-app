@@ -7,7 +7,7 @@ phases:
       library: "target/my-app-1.0-SNAPSHOT.jar"    # library (relative path to project root)
       groupId: "com.mycompany.app"
       artifactId: "my-app"
-      version: "1.0-SNAPSHOT"                                  # Version for publishing the library. Format: [major].[minor]
+      version: "1.0-SNAPSHOT"                                  # Version for publishing the library. Format: [major].[minor]-SNAPSHOT
         
   email:
 
