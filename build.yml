@@ -3,7 +3,7 @@ maintainer: fortuno@laliga.es   # E-mail of project mantainer/owner, for informa
 format: "java"                 # language/technology of the project
 phases:
   build:      # array with the libraries to build/publish. The four params (compile,sln,library,version) are mandatory for each library. 
-    - compile: "yes"                                # Building and publishing the library                                      # target/my-app-1.0-SNAPSHOT.jar 
+    - compile: "yes"                                # Building and publishing the library                                     
       library: "target/my-app-1.0-SNAPSHOT.jar"    # library (relative path to project root)
       groupId: "com.mycompany.app"
       artifactId: "my-app"
