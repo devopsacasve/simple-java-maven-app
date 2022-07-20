@@ -4,7 +4,7 @@ format: "java"                 # language/technology of the project
 phases:
   build:      # array with the libraries to build/publish. The four params (compile,sln,library,version) are mandatory for each library. 
     - compile: "yes"                                # Building and publishing the library                                     
-      library: "target/my-app-1.0"    # library (relative path to project root)
+      library: "target/my-app-1.0.1"    # library (relative path to project root)
       groupId: "com.mycompany.app"
       artifactId: "my-app"
       version: "1.0"                                  # Version for publishing the library. Format: [major].[minor]-SNAPSHOT
